@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <!-- http://getbootstrap.com/docs/5.1/ -->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet" />
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+
+  <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+  <link href="/static/favicon.ico" rel="icon" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="/static/styles.css" rel="stylesheet" />
+
+  <title>Index</title>
+</head>
+
+<body class="bg">
+  <canvas id="canvas"></canvas>
+
+  <nav class="index-nav">
+    <a href="/" class="index-nav-link nav-link">Home</a>
+    <a href="/videos" class="index-nav-link nav-link">Videos</a>
+    <a href="/misc" class="index-nav-link nav-link">Misc</a>
+    <a href="/sounds" class="index-nav-link nav-link">Sounds</a>
+    <a href="/sights" class="index-nav-link nav-link">Sights</a>
+    <a href="/survey" class="index-nav-link nav-link">Survey</a>
+    <a href="/game" class="index-nav-link nav-link">Game</a>
+    <form target="_blank" method="GET" action="https://www.google.com/search">
+      <input class="search-input text-center" name="q" type="text" placeholder="Search..">
+      <button class="search-button" type="submit">Submit</button>
+    </form>
+  </nav>
+  <div>
+    <div>
+      <svg class="curve-box" viewBox="0 0 500 150">
+        <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+          <textPath xlink:href="#curve">
+            &nbsp &nbsp &nbsp &nbsp A S M R
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <div class="after-svg">
+      <div class="nav-bar">
+        <span class="span"><span class="span"></span></span>
+        <div class="wrap">
+          <a href="/videos" class="underline">
+            <div title="Iceland Waterfall Picture" id="top-left" class="nav-text top">Videos</div>
+          </a>
+          <a href="/misc" class="underline">
+            <div title="Tropical Beach Picture" id="top-right" class="nav-text top">Misc</div>
+          </a>
+          <a href="/sights" class="underline">
+            <div title="Raindrops Magnified Picture" id="bottom-left" class="nav-text bottom">Sights</div>
+          </a>
+          <a href="/sounds" class="underline">
+            <div title="Sheet Music with Red Rose Picture" id="bottom-right" class="nav-text bottom">Sounds</div>
+          </a>
+          <a href="/" class="underline">
+            <div title="Mountains with Lake Picture" id="center" class="nav-text text-center center">
+              Home
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div>
+      <div class="index-text-cont">
+        <h1 class="index-h1 text-center">Relax Your Mind, Body, and Spirit</h1>
+        <blockquote class="text-center blockquote"
+          cite="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/asmr-videos-youtube-trend/">
+          "Coined in 2010, <b>ASMR</b> (autonomous sensory meridian response)
+          is a relaxing, often sedative sensation that begins on the scalp
+          and moves down the body. Also known as "brain massage", it's
+          triggered by placid sights and sounds such as whispers, accents,
+          and crackles."<br><i>You can play in the rain by moving your mouse, or touching the screen,
+            up, down, left, and right. This will change the amount of rain falling and
+            the direction the rain falls.
+          </i>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="trigger-headers-background">
+    <h2 class="trigger-header text-center"><u>Typical/Popular Triggers</u></h2>
+    <h3 class="trigger-sub-header text-center">That may result in the ASMR feeling</h3>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-start">
+      <img src="/static/images/asmr-scrabble.jpg" alt="Scrabble tiles with ASMR flipped over" />
+      <p class="trigger-p1 text-center"><b><u>Tapping:</u></b> <br><br>Tapping on wood, cups, or any texured object to create a pleasing
+        repetitive sound <br><a class="index-sounds-links" href="/sounds#tapping-link">Tapping Sound</a></p>
+    </div>
+  </div>
+  <div class="trigger-cont2">
+    <div class="trigger-item-cont2">
+      <p class="trigger-p2 text-center"><b><u>Whispers:</u></b> <br><br>Talking calmly and softly <br>
+        <a class="index-sounds-links" href="/sounds#whispers-link">Whispers Sound</a></p>
+      <img src="/static/images/asmr-whispers.jpg" alt="Meerkats whispering to each other" />
+    </div>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-position">
+      <img src="/static/images/asmr-crinkling.jpg" alt="Crumpled up paper with black background" />
+      <p class="trigger-p1 text-center"><b><u>Crinkling:</u></b> <br><br>Crinkling of paper, plastic, packaging, or other objects <br>
+        <a class="index-sounds-links" href="/sounds#crinkling-link">Crinkling Sounds</a></p>
+    </div>
+  </div>
+  <div class="trigger-cont2">
+    <div class="trigger-item-cont2">
+      <p class="trigger-p2 text-center"><b><u>Calming Music:</u></b> <br><br>Subtle or peaceful music that has a relaxing effect <br>
+        <a class="index-sounds-links" href="/sounds#calming-music-link">Calming Music</a></p>
+      <img src="/static/images/asmr-calming-music.jpg" alt="Violin and sheet music in forest with bench" />
+    </div>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-position">
+      <img src="/static/images/asmr-nature-sounds.jpg" alt="Grass with flower and headphones" />
+      <p class="trigger-p1 text-center"><b><u>Nature Sounds:</u></b> <br><br>Walking on crunchy leaves, wind, birds, rain,
+        or other sounds found in nature <br><a class="index-sounds-links" href="/sounds#nature-sounds-link">Nature Sounds</a></p>
+    </div>
+  </div>
+  <div class="trigger-cont2">
+    <div class="trigger-item-cont2">
+      <p class="trigger-p2 text-center"><b><u>Page Turning:</u></b> <br><br>Sounds of pages being turned in books, magazines,
+      or newspapers</p>
+      <img src="/static/images/asmr-page-turning.jpg" alt="Open book with pages" />
+    </div>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-position">
+      <img src="/static/images/asmr-typing.jpg" alt="Black keyboard picture" />
+      <p class="trigger-p1 text-center"><b><u>Writing/Typing:</u></b> <br><br>Sounds of pens/pencils writing on paper, or sounds
+      of typing on a keyboard or typewriter <br><a class="index-sounds-links" href="/sounds#typing-link">Typing Sounds</a></p>
+    </div>
+  </div>
+  <div class="trigger-cont2">
+    <div class="trigger-item-cont2">
+      <p class="trigger-p2 text-center"><b><u>Chewing/Drinking:</u></b> <br><br>Sounds of people or animals eating food, often
+      crunchy, or drinking beverages <br><a class="index-sounds-links" href="/sounds#eating-link">Eating Sounds</a></p>
+      <img src="/static/images/asmr-eating.jpg" alt="Monkey eating in a tree" />
+    </div>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-position">
+      <img src="/static/images/asmr-water-sounds.jpg" alt="Water droplet ripple in body of water" />
+      <p class="trigger-p1 text-center"><b><u>Water Sounds:</u></b> <br><br>Sounds of rushing rivers, waterfalls, streams,
+      ocean waves, or other flowing water</p>
+    </div>
+  </div>
+  <div class="trigger-cont2">
+    <div class="trigger-item-cont2">
+      <p class="trigger-p2 text-center"><b><u>Cat Purring:</u></b> <br><br>A cat's pur can have healing effects and is
+      very calming</p>
+      <img src="/static/images/asmr-tiger.jpg" alt="White tiger with black background" />
+    </div>
+  </div>
+  <div class="trigger-cont1">
+    <div class="trigger-item-cont1 trigger-position">
+      <img src="/static/images/asmr-massage.jpg" alt="Hand getting massaged white background" />
+      <p class="trigger-p1 text-center"><b><u>Personal Attention/Massage:</u></b> <br><br>Having someone dedicate personal attention
+      in the form of massage, getting make-up or hair done, can be very relaxing <br><a class="index-sounds-links" href="/videos#make-up-link">Make-up Video</a></p>
+    </div>
+  </div>
+  <h3 class="index-article-header text-center">ASMR Articles</h3>
+  <div>
+    <div id="asmr-articles-link" class="index-grid-cont text-center">
+      <div class="index-grid-item item1">
+        <h4>What will it feel like?</h4>
+        <a target="_blank" href="https://www.webmd.com/brain/autonomous-sensory-meridian-response#:~:text=Autonomous%20sensory%20meridian%20response%2C%20or,don't%20know%20about%20it.">
+          What Is Autonomous Sensory Meridian Response?
+        </a><br><br>
+        <a target="_blank" href="https://www.healthshots.com/mind/happiness-hacks/we-decoded-the-science-of-asmr-and-we-finally-know-why-it-feels-so-good/">
+          We finally know why ASMR feels so good?
+        </a><br><br>
+        <a target="_blank" href="https://www.npr.org/sections/health-shots/2019/10/17/770696925/some-people-get-brain-tingles-from-these-slime-videos-what-s-behind-the-feeling">
+          What's behind the feeling?
+        </a><br>
+      </div>
+      <div class="index-grid-item item2">
+        <h4>Will I be able to experience it?</h4>
+        <a target="_blank" href="https://theconversation.com/asmr-what-we-know-so-far-about-this-unique-brain-phenomenon-and-what-we-dont-135106">
+          What we know so far
+        </a><br><br>
+        <a target="_blank" href="https://asmruniversity.com/voices-decreased-asmr-ability/">
+          Can the ability to experience ASMR go away?
+        </a><br><br>
+        <a target="_blank" href="https://www.cnn.com/2022/02/02/health/asmr-tinglehead-wellness/index.html">
+          Are you a tinglehead?
+        </a><br><br>
+        <a target="_blank" href="https://www.verywellhealth.com/asmr-tingles-anxiety-5218195">
+          Why do only some people get the ASMR tingles?
+        </a><br><br>
+        <a target="_blank" href="https://www.verywellmind.com/what-is-asmr-4582673">
+          What is ASMR?
+        </a>
+      </div>
+      <div class="index-grid-item item3">
+        <h4>What is the science?</h4>
+        <a target="_blank" href="https://www.nationalgeographic.co.uk/science-and-technology/2022/03/asmr-or-not-unpicking-the-science-behind-a-sensory-phenomenon#:~:text=%E2%80%9CAlthough%20these%20results%20are%20preliminary,the%20results%20are%20less%20enigmatic.">
+          ASMR or not?
+        </a><br><br>
+        <a target="_blank" href="https://www.brainfacts.org/thinking-sensing-and-behaving/emotions-stress-and-anxiety/2021/testing-the-tingles-the-science-behind-asmr-020221">
+          Testing the tingles
+        </a><br><br>
+        <a target="_blank" href="https://www.newscientist.com/article/2274312-science-with-sam-what-is-asmr/">
+          Science with Sam: What is ASMR?
+        </a><br><br>
+        <a target="_blank" href="https://www.smithsonianmag.com/science-nature/researchers-begin-gently-probe-science-behind-asmr-180962550/">
+          Beginning to gently probe the science behind ASMR
+        </a><br>
+      </div>
+    </div>
+    <div class="info-grid-cont text-center">
+      <div class="index-about-me">
+        <h5 class="index-about-me-header text-center">My ASMR Experience</h5><br>
+        <img class="about-me-pic" src="/static/images/asmr-waterfall.jpg" alt="Vast Waterfall With Sunset" />
+        <p>
+          ASMR came into my life a while ago. When I first learned about it
+          there weren't many, if any, YouTube creaters in this genre. Now
+          there are hundreds with millions of views. Even before
+          the craze started I could see the need for it. I remembered
+          feeling that sensation occassionally before, usually when I was
+          watching someone get their hair or make-up done or when watching
+          something very relaxing. I wanted the feeling to last as long as
+          possible even though I didn't actually understand what I was
+          feeling. Now I watch ASMR videos pretty regularly to help me
+          relax, or fall asleep, or even to help with anxiety. I definately
+          have my favorites and my go-to's, but I still explore what else is
+          out there. This page is just a reflextion of that. I have no
+          degrees in this field, so this is purely derived from my
+          experience and opinion. Even if you have never felt ASMR
+          doesn't mean it's isn't for you because it can still be very relaxing
+          and calming to watch for most people. Much like how it is
+          relaxing to watch the waves roll in at the beach, or
+          listening to a cat purr, hearing an orchestra or choir, or even
+          watching the sunset.
+        </p>
+      </div>
+    </div>
+  <footer>
+    <div class="footer-cont footer-index text-center">
+      <p class="footer-p text-center">
+        Just a small little reference guide to your ASMR journey.
+      </p>
+      <div class="footer-anchor-links-cont">
+        <a href="#asmr-articles-link">ASMR Articles</a>
+        <a href="/videos#eating-videos-link">Eating/Mukbang Videos</a>
+        <a href="/sounds#musical-frisson-link">Musical Frisson Videos</a>
+        <a href="/misc#unintentional-asmr-link">Unintentional ASMR Videos</a>
+        <a href="/misc#recipes-link">Popular ASMR Food Recipes</a>
+        <a href="/sights#background-link">Pick a Favorite Background</a>
+      </div>
+      <a class="footer-links-survey" href="/survey">Take A Survey</a>
+      <a class="footer-links-survey" href="/game">Play A Game</a>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/videos">Videos</a>
+        <a href="/misc">Misc</a>
+        <a href="/sounds">Sounds</a>
+        <a href="/sights">Sights</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/static/script.js" type="text/javascript"></script>
+</body>
+</html>

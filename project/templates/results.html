@@ -1,0 +1,97 @@
+{% extends "layout.html" %} {% block title %} Survey {% endblock %} {% block
+main %}
+<header class="text-center headers">Results</header>
+<br>
+<h1 class="results-h1 text-center">{{ userName }}</h1>
+<div class="table-cont">
+  <table class="table table-striped table-primary results-table">
+    <thead class="table-header">
+      <tr>
+        <th>Question Number</th>
+        <th>Possible Answers</th>
+        <th>Answer Given</th>
+        <th>Most Selected Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1. Have you ever experienced the feeling described above?</td>
+        <td>Yes/No/Not Sure(idk)</td>
+        <td>{{ ques1 }}</td>
+        <td>
+          "{{ part1[0][0] }}" Answered <b>{{ percent1 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2. Which of these sounds give you the most ASMR chills or tingles?
+        </td>
+        <td>Tapping/Whispering/<br />Water/Music/None</td>
+        <td>{{ ques2 }}</td>
+        <td>
+          "{{ part2[0][0] }}" Answered <b>{{ percent2 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>3. Do you enjoy watching or listening to people eat?</td>
+        <td>Yes/No/Not Sure</td>
+        <td>{{ ques3 }}</td>
+        <td>
+          "{{ part3[0][0] }}" Answered <b>{{ percent3 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>4. Does hearing a cat purr or seeing animals sleep relax you?</td>
+        <td>Yes/No/Sometimes</td>
+        <td>{{ ques4 }}</td>
+        <td>
+          "{{ part4[0][0] }}" Answered <b>{{ percent4 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>5. How often do you watch/listen to ASMR?</td>
+        <td>
+          Daily/2-Week/5-Week/2-Month/<br />Occasionally/<br />Rarely/Never/<br />When
+          Needed
+        </td>
+        <td>{{ ques5 }}</td>
+        <td>
+          "{{ part5[0][0] }}" Answered <b>{{ percent5 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>6. Does ASMR help you with Anxiety?</td>
+        <td>Yes/No/Sometimes/<br />Not Sure</td>
+        <td>{{ ques6 }}</td>
+        <td>
+          "{{ part6[0][0] }}" Answered <b>{{ percent6 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>7. Does ASMR help you fall asleep?</td>
+        <td>Yes/No/Sometimes/<br />Not Sure</td>
+        <td>{{ ques7 }}</td>
+        <td>
+          "{{ part7[0][0] }}" Answered <b>{{ percent7 }}</b> of the
+          time.
+        </td>
+      </tr>
+      <tr>
+        <td>8. Does ASMR help you relax?</td>
+        <td>Yes/No/Sometimes</td>
+        <td>{{ ques8 }}</td>
+        <td>
+          "{{ part8[0][0] }}" Answered <b>{{ percent8 }}</b> of the
+          time.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

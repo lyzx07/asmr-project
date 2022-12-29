@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <link href="/static/favicon.ico" rel="icon" />
+
+    <link href="/static/styles.css" rel="stylesheet" />
+
+    <title>Sights</title>
+  </head>
+
+  <body class="bg-layout">
+    <div class="nav-bar-layout">
+      <h1 class="layout-h1">ASMR</h1>
+      <ul class="nav-bar-cont text-center">
+        <li class="nav-bar-links" style="--i: 6"><a href="/">Home</a></li>
+        <li class="nav-bar-links" style="--i: 5">
+          <a href="/videos">Videos</a>
+        </li>
+        <li class="nav-bar-links" style="--i: 4"><a href="/misc">Misc</a></li>
+        <li class="nav-bar-links" style="--i: 3">
+          <a href="/sounds">Sounds</a>
+        </li>
+        <li class="nav-bar-links" style="--i: 2">
+          <a href="/sights">Sights</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="text-center headers">Sights</header>
+    <div class="text-center blockquote-sights-cont">
+      <img
+        class="sights-blockquote-pic"
+        src="/static/images/asmr-beach.jpg"
+        alt="Beach Waves With Sunset"
+      />
+      <blockquote
+        class="sights-blockquote"
+        cite="https://www.calmsage.com/calming-images/#:~:text=Why%20are%20some%20images%20CALMING,Ultimately%20they%20soothe%20our%20brain."
+      >
+        "Research suggests that certain pictures have a pattern, fractals,
+        colors or textures that make us feel relaxed and happy. These patterns
+        can be natural or even man-made. Ultimately they soothe our brain. Even
+        cute images like that of puppies, seals, kittens, to name a few can also
+        make you feel happy and relaxed. The science behind it says that in
+        pursuit of pleasure, the brain learns to hit the repeat button. So when
+        we see repetitive patterns (like fractals) we feel happy. Also, guided
+        imagery is used to reduce stress and anxiety because our brain is bound
+        to perceive certain images as positive, leading to positive
+        feelings."<br />
+        <i
+          >Try moving your mouse around the dots below to see a relaxing visual
+          effect. On phone screens just click dots instead.</i
+        >
+      </blockquote>
+    </div>
+
+    <canvas id="canvas1"></canvas>
+
+    <div class="slides-container">
+      <!-- Full-width images with number text -->
+      <div class="my-slides">
+        <div class="number-text active">1 / 12</div>
+        <img
+          src="/static/images/asmr-beach-wide.jpg"
+          style="width: 100%"
+          alt="Wide Shot of Beach Waves And Trees"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">2 / 12</div>
+        <img
+          src="/static/images/asmr-beach-sunset.jpg"
+          style="width: 100%"
+          alt="Purple And Pink Sunset Over Ocean"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">3 / 12</div>
+        <img
+          src="/static/images/asmr-beach-tropical.jpg"
+          style="width: 100%"
+          alt="Tropical Beach Waves With Island in Center"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">4 / 12</div>
+        <img
+          src="/static/images/asmr-raindrops.jpg"
+          style="width: 100%"
+          alt="Magnified Picture of Raindrops"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">5 / 12</div>
+        <img
+          src="/static/images/asmr-meditation.jpg"
+          style="width: 100%"
+          alt="Fractal Image of Meditation"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">6 / 12</div>
+        <img
+          src="/static/images/asmr-snowflakes.jpg"
+          style="width: 100%"
+          alt="Multiple Snowflakes With Dark Background"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">7 / 12</div>
+        <img
+          src="/static/images/asmr-owl.jpg"
+          style="width: 100%"
+          alt="Picture of A White Owl Sleeping"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">8 / 12</div>
+        <img
+          src="/static/images/asmr-cat-eyes.jpg"
+          style="width: 100%"
+          alt="Close-up of A Cat's Blue Eyes And Face"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">9 / 12</div>
+        <img
+          src="/static/images/asmr-peacock.jpg"
+          style="width: 100%"
+          alt="Peacock With Feathers Fully Extended"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">10 / 12</div>
+        <img
+          src="/static/images/asmr-puppy.jpg"
+          style="width: 100%"
+          alt="Cute Puppy Looking Up At The Sky"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">11 / 12</div>
+        <img
+          src="/static/images/asmr-stained-spiral.jpg"
+          style="width: 100%"
+          alt="A Spiral of Stained Glass"
+        />
+      </div>
+
+      <div class="my-slides">
+        <div class="number-text">12 / 12</div>
+        <img
+          src="/static/images/asmr-tiger.jpg"
+          style="width: 100%"
+          alt="Sleeping White Tiger With Black Background"
+        />
+      </div>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption">Click Images Below</p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-beach-wide.jpg"
+            onclick="currentSlide(1)"
+            alt="Calming Beach Waves"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-beach-sunset.jpg"
+            onclick="currentSlide(2)"
+            alt="Purple And Pink Sunset"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-beach-tropical.jpg"
+            onclick="currentSlide(3)"
+            alt="Tropical Beach Waves"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-raindrops.jpg"
+            onclick="currentSlide(4)"
+            alt="Raindrops"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-meditation.jpg"
+            onclick="currentSlide(5)"
+            alt="Meditation"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-snowflakes.jpg"
+            onclick="currentSlide(6)"
+            alt="Snowflakes"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-owl.jpg"
+            onclick="currentSlide(7)"
+            alt="White Owl Sleeping"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-cat-eyes.jpg"
+            onclick="currentSlide(8)"
+            alt="Cat's Blue Eyes"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-peacock.jpg"
+            onclick="currentSlide(9)"
+            alt="Peacock"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-puppy.jpg"
+            onclick="currentSlide(10)"
+            alt="Cute Puppy"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-stained-spiral.jpg"
+            onclick="currentSlide(11)"
+            alt="Stained Glass"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="slide cursor"
+            src="/static/images/asmr-tiger.jpg"
+            onclick="currentSlide(12)"
+            alt="Sleeping White Tiger"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <header class="text-center sights-header">
+      Which Color Is More Soothing/Comforting To You?
+    </header>
+    <div id="background-link" class="sights-colors-cont">
+      <div class="sights-colors" id="color1">
+        <button
+          class="btn-colors"
+          id="btn1"
+          onclick="function1('#91b2c7');"
+          type="button"
+          role="button"
+        >
+          Lt. Blue
+        </button>
+      </div>
+      <div class="sights-colors" id="color2">
+        <button
+          class="btn-colors"
+          id="btn2"
+          onclick="function2('#000080')"
+          type="button"
+          role="button"
+        >
+          Dk. Blue
+        </button>
+      </div>
+      <div class="sights-colors" id="color3">
+        <button
+          class="btn-colors"
+          id="btn3"
+          onclick="function3('#92d293')"
+          type="button"
+          role="button"
+        >
+          Lt. Green
+        </button>
+      </div>
+      <div class="sights-colors" id="color4">
+        <button
+          class="btn-colors"
+          id="btn4"
+          onclick="function4('#c59faa')"
+          type="button"
+          role="button"
+        >
+          Pink
+        </button>
+      </div>
+      <div class="sights-colors" id="color5">
+        <button
+          class="btn-colors"
+          id="btn5"
+          onclick="function5('#f3e496')"
+          type="button"
+          role="button"
+        >
+          Beige
+        </button>
+      </div>
+      <div class="sights-colors" id="color6">
+        <button
+          class="btn-colors"
+          id="btn6"
+          onclick="function6('#8d6298')"
+          type="button"
+          role="button"
+        >
+          Purple
+        </button>
+      </div>
+    </div>
+    <br />
+    <header class="text-center sights-header">
+      Which Background Is More Soothing/Comforting To You?
+    </header>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" />
+      <div id="imgtext"></div>
+    </div>
+    <div class="sights-bg-cont">
+      <div class="sights-bg-item">
+        <img
+          id="image-bg1"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-blue-r.jpg"
+          alt="Blue Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="sights-bg-item">
+        <img
+          id="image-bg2"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-orange-sm.jpg"
+          alt="Orange Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="sights-bg-item">
+        <img
+          id="image-bg3"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-pink-sm.jpg"
+          alt="Pink Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="sights-bg-item">
+        <img
+          id="image-bg4"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-gold.jpg"
+          alt="Gold Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="sights-bg-item">
+        <img
+          id="image-bg5"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-paisley-rs.jpg"
+          alt="Paisley Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="sights-bg-item">
+        <img
+          id="image-bg6"
+          class="sights-bg"
+          src="/static/images/asmr-fractal-circles-rs.jpg"
+          alt="Gold/Yellow/White Circle Fractal Patterns"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+    <br />
+    <footer>
+      <div class="footer-cont footer-index text-center">
+        <p class="footer-p text-center">
+          Just a small little reference guide to your ASMR journey.
+        </p>
+        <div class="footer-anchor-links-cont">
+          <a href="/#asmr-articles-link">ASMR Articles</a>
+          <a href="/videos#eating-videos-link">Eating/Mukbang Videos</a>
+          <a href="/sounds#musical-frisson-link">Musical Frisson Videos</a>
+          <a href="/misc#unintentional-asmr-link">Unintentional ASMR Videos</a>
+          <a href="/misc#recipes-link">Popular ASMR Food Recipes</a>
+          <a href="/sights#background-link">Pick a Favorite Background</a>
+        </div>
+        <a class="footer-links-survey" href="/survey">Take A Survey</a>
+        <a class="footer-links-survey" href="/game">Play A Game</a>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/videos">Videos</a>
+          <a href="/misc">Misc</a>
+          <a href="/sounds">Sounds</a>
+          <a href="/sights">Sights</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const scanvas = document.getElementById("canvas1");
+      scanvas.width = window.innerWidth;
+      scanvas.height = window.innerHeight;
+
+      const c = scanvas.getContext("2d");
+      const randColor = () => {
+        return (
+          "#" +
+          Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, "0")
+            .toUpperCase()
+        );
+      };
+
+      var mouse = {
+        x: undefined,
+        y: undefined,
+      };
+
+      var maxRadius = 40;
+      var minRadius = 2;
+
+      var colorArray = ["#FF4858", "#1B7F79", "#00CCC0", "#72F2EB", "#747F7F"];
+
+      window.addEventListener("mousemove", function (event) {
+        mouse.x = event.x;
+        mouse.y = event.y;
+      });
+
+      window.addEventListener("resize", function () {
+        scanvas.width = window.innerWidth;
+        scanvas.height = window.innerHeight;
+
+        init();
+      });
+
+      function Circle(x, y, dx, dy, radius) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.minRadius = radius;
+        this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+        this.draw = function () {
+          c.beginPath();
+          c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+          c.fillStyle = this.color;
+          c.fill();
+        };
+
+        this.update = function () {
+          if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            this.dx = -this.dx;
+          }
+          if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+            this.dy = -this.dy;
+          }
+          this.x += this.dx;
+          this.y += this.dy;
+
+          //interactivity
+          if (
+            mouse.x - this.x < 50 &&
+            mouse.x - this.x > -50 &&
+            mouse.y - this.y < 50 &&
+            mouse.y - this.y > -50
+          ) {
+            if (this.radius < maxRadius) {
+              this.radius += 1;
+            }
+          } else if (this.radius > this.minRadius) {
+            this.radius -= 1;
+          }
+
+          this.draw();
+        };
+      }
+
+      var circleArray = [];
+
+      function init() {
+        circleArray = [];
+
+        for (var i = 0; i < 1500; i++) {
+          var radius = Math.random() * 3 + 1;
+          var x = Math.random() * (innerWidth - radius * 2) + radius;
+          var y = Math.random() * (innerHeight - radius * 2) + radius;
+          var dx = Math.random() - 0.5;
+          var dy = Math.random() - 0.5;
+          circleArray.push(new Circle(x, y, dx, dy, radius));
+        }
+      }
+
+      function animate() {
+        requestAnimationFrame(animate);
+        c.clearRect(0, 0, innerWidth, innerHeight);
+
+        for (var i = 0; i < circleArray.length; i++) {
+          circleArray[i].update();
+        }
+      }
+      init();
+      animate();
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("my-slides");
+        let dots = document.getElementsByClassName("slide");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+      function function1(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#7d9bad";
+        change2.style.backgroundColor = "#a0c7de";
+        change3.style.backgroundColor = "#7d9bad";
+        change4.style.backgroundColor = "#a0c7de";
+        change5.style.backgroundColor = "#7d9bad";
+        change6.style.backgroundColor = "#a0c7de";
+      }
+
+      function function2(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#02029c";
+        change2.style.backgroundColor = "#010173";
+        change3.style.backgroundColor = "#02029c";
+        change4.style.backgroundColor = "#010173";
+        change5.style.backgroundColor = "#02029c";
+        change6.style.backgroundColor = "#010173";
+      }
+
+      function function3(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#9ee69f";
+        change2.style.backgroundColor = "#82bd83";
+        change3.style.backgroundColor = "#9ee69f";
+        change4.style.backgroundColor = "#82bd83";
+        change5.style.backgroundColor = "#9ee69f";
+        change6.style.backgroundColor = "#82bd83";
+      }
+
+      function function4(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#d4abb7";
+        change2.style.backgroundColor = "#ba95a0";
+        change3.style.backgroundColor = "#d4abb7";
+        change4.style.backgroundColor = "#ba95a0";
+        change5.style.backgroundColor = "#d4abb7";
+        change6.style.backgroundColor = "#ba95a0";
+      }
+
+      function function5(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#ded087";
+        change2.style.backgroundColor = "#c9bd7b";
+        change3.style.backgroundColor = "#ded087";
+        change4.style.backgroundColor = "#c9bd7b";
+        change5.style.backgroundColor = "#ded087";
+        change6.style.backgroundColor = "#c9bd7b";
+      }
+      function function6(color) {
+        document.body.style.background = color;
+        var change1 = document.getElementById("color1");
+        var change2 = document.getElementById("color2");
+        var change3 = document.getElementById("color3");
+        var change4 = document.getElementById("color4");
+        var change5 = document.getElementById("color5");
+        var change6 = document.getElementById("color6");
+        change1.style.backgroundColor = "#a171ad";
+        change2.style.backgroundColor = "#7e5887";
+        change3.style.backgroundColor = "#a171ad";
+        change4.style.backgroundColor = "#7e5887";
+        change5.style.backgroundColor = "#a171ad";
+        change6.style.backgroundColor = "#7e5887";
+      }
+
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

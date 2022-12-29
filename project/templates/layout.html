@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+
+
+    <!-- https://favicon.io/emoji-favicons/money-bag/ -->
+    <link href="/static/favicon.ico" rel="icon" />
+
+    <link href="/static/styles.css" rel="stylesheet" />
+
+    <title>ASMR {% block title %}{% endblock %}</title>
+  </head>
+
+  <body id="bg-layout" class="bg-layout">
+    <div class="nav-bar-layout">
+      <h1 class="layout-h1">ASMR</h1>
+      <ul class="nav-bar-cont text-center">
+        <li class="nav-bar-links" style="--i: 6"><a href="/">Home</a></li>
+        <li class="nav-bar-links" style="--i: 5">
+          <a href="/videos">Videos</a>
+        </li>
+        <li class="nav-bar-links" style="--i: 4"><a href="/misc">Misc</a></li>
+        <li class="nav-bar-links" style="--i: 3">
+          <a href="/sounds">Sounds</a>
+        </li>
+        <li class="nav-bar-links" style="--i: 2">
+          <a href="/sights">Sights</a>
+        </li>
+      </ul>
+    </div>
+    <main>{% block main %}{% endblock %}</main>
+    <br />
+    <footer>
+      <div class="footer-cont footer-index text-center">
+        <p class="footer-p text-center">
+          Just a small little reference guide to your ASMR journey.
+        </p>
+        <div class="footer-anchor-links-cont">
+          <a href="/#asmr-articles-link">ASMR Articles</a>
+          <a href="/videos#eating-videos-link">Eating/Mukbang Videos</a>
+          <a href="/sounds#musical-frisson-link">Musical Frisson Videos</a>
+          <a href="/misc#unintentional-asmr-link">Unintentional ASMR Videos</a>
+          <a href="/misc#recipes-link">Popular ASMR Food Recipes</a>
+          <a href="/sights#background-link">Pick a Favorite Background</a>
+        </div>
+        <a class="footer-links-survey" href="/survey">Take A Survey</a>
+        <a class="footer-links-survey" href="/game">Play A Game</a>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/videos">Videos</a>
+          <a href="/misc">Misc</a>
+          <a href="/sounds">Sounds</a>
+          <a href="/sights">Sights</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

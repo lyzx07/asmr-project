@@ -1,0 +1,138 @@
+{% extends "layout.html" %} {% block title %} Survey {% endblock %} {% block
+main %}
+<header class="text-center headers">Survey</header>
+<div class="survey-p-cont text-center">
+  <img class="survey-p-pic" src="/static/images/asmr-mountains.jpg" alt="Mountains with Lake Picture" />
+  <p class="survey-p">
+    A lot people describe the sensation as “tingles” that run through the back
+    of someone's head and spine. Others say the feeling is deeply relaxing, and
+    can even cause them to fall asleep. A=
+    <u>autonomous</u> means that the feeling is in your body, S=
+    <u>sensory</u> means that your senses perceive the feeling, M=
+    <u>meridian</u> refers to the energy of the feeling in your body, and R=
+    <u>response</u> indicates that the feeling is a response to stimuli.
+  </p>
+</div>
+<br />
+<form class="form-cont" action="/survey" method="post">
+  <div class="text-center survey-item">
+    <p class="under">
+      1. Have you ever experienced the feeling described above?
+    </p>
+    <input type="radio" id="yes" name="survey-q1" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q1" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="idk" name="survey-q1" value="idk" />
+    <label for="idk">Not Sure</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">
+      2. Which of these sounds give you the most ASMR chills or tingles?
+    </p>
+    <input
+      type="radio"
+      id="tapping"
+      name="survey-q2"
+      value="tapping"
+      required
+    />
+    <label for="tapping">Tapping</label><br /><br />
+    <input type="radio" id="whispering" name="survey-q2" value="whispering" />
+    <label for="tapping">Whispering(soft voices)</label><br /><br />
+    <input type="radio" id="water" name="survey-q2" value="water" />
+    <label for="tapping">Water Sounds</label><br /><br />
+    <input type="radio" id="music" name="survey-q2" value="music" />
+    <label for="music">Calming Music</label><br /><br />
+    <input type="radio" id="none" name="survey-q2" value="none" />
+    <label for="none">None/Other</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">3. Do you enjoy watching or listening to people eat?</p>
+    <input type="radio" id="yes" name="survey-q3" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q3" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="idk" name="survey-q3" value="idk" />
+    <label for="idk">Not Sure</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">
+      4. Does hearing a cat purr or seeing animals sleep relax you?
+    </p>
+    <input type="radio" id="yes" name="survey-q4" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q4" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="sometimes" name="survey-q4" value="sometimes" />
+    <label for="sometimes">Sometimes</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">5. How often do you watch/listen to ASMR?</p>
+    <input type="radio" id="daily" name="survey-q5" value="daily" required />
+    <label for="daily">Daily/Nightly</label><br /><br />
+    <input type="radio" id="2-week" name="survey-q5" value="2-week" />
+    <label for="2-week">2-3 Times a week</label><br /><br />
+    <input type="radio" id="5-week" name="survey-q5" value="5-week" />
+    <label for="5-week">5-6 Times a week</label><br /><br />
+    <input type="radio" id="2-month" name="survey-q5" value="2-month" />
+    <label for="2-month">2-3 Times a month</label><br /><br />
+    <input type="radio" id="occasional" name="survey-q5" value="occasional" />
+    <label for="occasional">Occasionally</label><br /><br />
+    <input type="radio" id="rare" name="survey-q5" value="rare" />
+    <label for="rare">Rarely</label><br /><br />
+    <input type="radio" id="never" name="survey-q5" value="never" />
+    <label for="never">Never</label><br /><br />
+    <input type="radio" id="needed" name="survey-q5" value="needed" />
+    <label for="needed">Only when needed</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">6. Does ASMR help you with Anxiety?</p>
+    <input type="radio" id="yes" name="survey-q6" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q6" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="sometimes" name="survey-q6" value="sometimes" />
+    <label for="sometimes">Sometimes</label><br /><br />
+    <input type="radio" id="idk" name="survey-q6" value="idk" />
+    <label for="idk">Not Sure</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">7. Does ASMR help you fall asleep?</p>
+    <input type="radio" id="yes" name="survey-q7" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q7" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="sometimes" name="survey-q7" value="sometimes" />
+    <label for="sometimes">Sometimes</label><br /><br />
+    <input type="radio" id="idk" name="survey-q7" value="idk" />
+    <label for="idk">Not Sure</label>
+  </div>
+  <div class="text-center survey-item">
+    <p class="under">8. Does ASMR help you relax?</p>
+    <input type="radio" id="yes" name="survey-q8" value="yes" required />
+    <label for="yes">Yes</label><br /><br />
+    <input type="radio" id="no" name="survey-q8" value="no" />
+    <label for="no">No</label><br /><br />
+    <input type="radio" id="sometimes" name="survey-q8" value="sometimes" />
+    <label for="sometimes">Sometimes</label>
+  </div>
+  <div class="text-center">
+    <label class="text-center" for="name">Username-1</label>
+    <select class="text-center" name="name" id="name">
+      <option disabled selected>Pick One</option>
+      {% for i in words1 %}
+      <option value="{{ i }}" required>{{ i }}</option>
+      {% endfor %}</select
+    ><br />
+    <label class="text-center" for="name2">Username-2</label>
+    <select class="text-center" name="name2" id="name2">
+      <option disabled selected>Pick One</option>
+      {% for j in words2 %}
+      <option value="{{ j }}" required>{{ j }}</option>
+      {% endfor %}</select
+    ><br />
+  </div>
+  <input id="submit-btn" type="submit" value="Submit" />
+</form>
+{% endblock %}

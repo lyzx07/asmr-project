@@ -8,7 +8,6 @@ from flask import Flask, flash, redirect, render_template, request, session, url
 from flask_session import Session
 from tempfile import mkdtemp
 
-######STILL WORKING ON THIS PROJECT! NOT COMPLETE!!######
 
 # Configure application
 app = Flask(__name__)
